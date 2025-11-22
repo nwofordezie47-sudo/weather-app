@@ -1,21 +1,48 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: #222;
+  background: #80e1ff;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, black 10%,  #00c2ff 90%);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+
+
+
 .card {
   width: 90%;
   max-width: 470px;
-  background: linear-gradient(135deg,black , navy);
+  background: linear-gradient(135deg,black , #00c2ff);
   color: #fff;
   margin: 100px auto 0;
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
+  box-shadow: 0 0 60px black;
 }
 .search {
   width:100% ;
@@ -80,5 +107,90 @@ body {
   font-size: 28px;
   margin-top: -6px;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    gap: 8px;
+  }
+  
+  .brand {
+    gap: 8px;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+  
+  .brand div div {
+    font-size: 12px;
+  }
+  
+  .brand div div:last-child {
+    font-size: 0.65rem !important;
+  }
+  
+  .card {
+    width: 95%;
+    padding: 25px 20px;
+    margin: 20px auto 0;
+  }
+  
+  .search input {
+    padding: 8px 15px;
+    height: 50px;
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  
+  .search button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .search button img {
+    width: 18px;
+  }
+  
+  .weather-icon {
+    width: 120px;
+    margin-top: 20px;
+  }
+  
+  .weather h1 {
+    font-size: 50px;
+  }
+  
+  .weather h2 {
+    font-size: 30px;
+  }
+  
+  .details {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 30px;
+  }
+  
+  .col {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .col img {
+    width: 32px;
+  }
+  
+  .humidity, .wind {
+    font-size: 22px;
+  }
+}
+
+
 /* #00feba
 #5b548a */

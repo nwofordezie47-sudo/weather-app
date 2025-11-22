@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Momo Trust Display", sans-serif;
+
 }
 body {
   background: #80e1ff;
@@ -111,10 +115,12 @@ header {
 @media (max-width: 768px) {
   body {
     padding: 10px;
+    font-size: 16px;
   }
   
   header {
     gap: 8px;
+    font-size: 25px;
   }
   
   .brand {
@@ -132,13 +138,14 @@ header {
   }
   
   .brand div div:last-child {
-    font-size: 0.65rem !important;
+    font-size: 0.65rem ;
   }
   
   .card {
     width: 95%;
     padding: 25px 20px;
     margin: 20px auto 0;
+    height: 550px;
   }
   
   .search input {
@@ -171,10 +178,11 @@ header {
   }
   
   .details {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     padding: 0;
     margin-top: 30px;
+    padding-top: 80px;
   }
   
   .col {
@@ -188,6 +196,9 @@ header {
   
   .humidity, .wind {
     font-size: 22px;
+  }
+  .temp{
+    padding-top: 40px;
   }
 }
 
